@@ -23,6 +23,10 @@ body {
 	font-size: 24px;
 }
 
+.small{
+	font-size : 6px;
+}
+
 .wrapper {
 	background-image: url("../images/background/background.jpg");
 	height: 550px;
