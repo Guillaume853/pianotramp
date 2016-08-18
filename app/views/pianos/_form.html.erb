@@ -1,0 +1,6 @@
+
+<%= simple_form_for @piano do |f| %>
+  <%= f.input :brand, placeholder: "Yamaha C1 Silent", error: 'Company name is mandatory, please specify one' %>
+  <%= f.input :address, placeholder: "133 avenue du Faubourg Saint-Honoré", label:"Address" %>
+  <%= f.button :submit, "Submit", class: "btn btn-primary" %>
+<% end %>
