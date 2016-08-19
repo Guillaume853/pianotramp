@@ -3,8 +3,18 @@
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2">
       <h1 class="text-center">
-        Your presentation for <%= @piano.brand %> has been successfully uploaded !
+        Your new piano for <%= @piano.brand %> has been successfully uploaded !
       </h1>
+      <ul>
+        <li>
+          <p>type: <%= @piano.brand %></p>
+        </li>
+        <li>
+          <p>address: <%= @piano.brand %></p>
+        </li>
+          <p>latitude: <%= @piano.latitude %>; longitude: <%= @piano.longitude %></p>
+        </li>
+      </ul>
       <p class="text-center">
         <%= link_to "View Piano Description", piano_path(@piano), class: "btn btn-success" %>
       </p>

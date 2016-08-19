@@ -4,12 +4,12 @@ class PianosController < ApplicationController
 
    def index
      @pianos = Piano.all
-
+     @gmap = "https://maps.googleapis.com/maps/api/js?key=" + ENV["GMAP_KEY"]
    end
 
-   def show
-
-   end
+  def show
+    @gmap = "https://maps.googleapis.com/maps/api/js?key=" + ENV["GMAP_KEY"]
+  end
 
    def new
      @piano= Piano.new
