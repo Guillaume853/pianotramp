@@ -60,6 +60,14 @@ body {
 	margin-bottom: 1em
 }
 
+#btn-recherche{
+	background-color:#7B5E7B;
+}
+
+#btn-location{
+	background-color:#A0C1D1;
+}
+
 .navbar-transparent{
 	background-color: rgba(0, 0, 0, 0.7);
 }
