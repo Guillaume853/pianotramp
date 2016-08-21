@@ -59,6 +59,14 @@
 
     <!-- Button (call-to-action) -->
     <%= link_to t(".top_call_to_action", default: "Post stuff"), "#", class: "navbar-wagon-item navbar-wagon-button btn" %>
+
+    <%= link_to root_path do %>
+      <%= image_tag "en.png" %>
+    <% end %>
+    <%= link_to root_path do %>
+      <%= image_tag "fr.png" %>
+    <% end %>
+
   </div>
 
   <!-- Dropdown list appearing on mobile only -->
