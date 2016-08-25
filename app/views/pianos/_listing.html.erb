@@ -1,14 +1,15 @@
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-      <% @pianos.each do |piano| %>
 
-        <p><%= piano.brand%></p>
-        <p>
-          address : <i><%=piano.address %> </i>
-        </p>
 
-      <% end %>
+<% @pianos.each do |piano| %>
+  <%= link_to piano_path (piano) do %>
+    <div class="card">
+      <div class="card-category">Popular</div>
+      <div class="card-description">
+        <h3><%= piano.brand %></h2>
+        <p>address : <i><%=piano.address %></p>
+      </div>
+      <%= image_tag 'user.jpg', class: "card-user avatar"%>
     </div>
-  </div>
-</div>
+  <%end %>
+<% end %>
+
